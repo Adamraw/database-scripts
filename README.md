@@ -5,7 +5,7 @@ A collection of python scripts for unpacking, moving, renaming and checking fold
 <b> Quick Start Guide </b>
 
 Prerequisites:
-R-exams must be installed and working.
+R-exams must be installed and the exams2pdf function must be working. (This is only neccesary if you want to utilize the PDFCheck.py script).
 
 Installation:
 
