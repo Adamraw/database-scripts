@@ -32,14 +32,22 @@ def main():
     if os.path.exists(args.input_directory):
         #togggle for find and delete
         if args.mode == 'fd':
-            find_dups(r'{}'.format(args.input_directory))
-            remove_dups()
+            if platform.system() == 'Windows':
+                find_dups(r'{}'.format(args.input_directory))
+                remove_dups()
+            else:
+                find_dups(r'{}'.format(args.input_directory),trg_dir='./dup')
+                remove_dups()
         #toggle for delete
         elif args.mode == 'd':
             remove_dups()
         #default
         else:
-            find_dups(r'{}'.format(args.input_directory))
+            if platform.system() == 'Windows':
+                find_dups(r'{}'.format(args.input_directory))
+            else:
+                find_dups(r'{}'.format(args.input_directory), trg_dir='./dup')
+
     else:
         print('Invalid filepath - filepath does not exist. Please specify a valid filepath.')
 
