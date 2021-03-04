@@ -15,7 +15,7 @@ fdf_scanner_path = Path('./duplicate_scripts/fdf_scanner.py')
 
 #define find_dups
 def find_dups(src_dir,trg_dir = '.\dup' ):
-    command = r'python {} -i {} -o {} -w '.format(fdf_scanner_path,src_dir,trg_dir)
+    command = r'python {} -i {} -o {}'.format(fdf_scanner_path,src_dir,trg_dir)
     os.system(command)
 
 #define remove_ups, runs dup file, which will delete found duplicate files. Toggle for OS
