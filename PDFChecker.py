@@ -1,21 +1,18 @@
 #import modules
-import os
-from pathlib import Path
-import platform
 import argparse
 import subprocess
 
 
-
+#set up parser for command line interface arguments
 parser = argparse.ArgumentParser(description="Iterate over Rmds in specified directory and generate pdfs - (Executes GeneratePDF.R script to generate pdfs with exams2pdf function).")
 parser.add_argument('-i','--input_directory',type=str,metavar=' ',required = True, help = 'Source Directory - Specify filepath to directory containing Rmds.')
 args = parser.parse_args()
 
-
+#main function that is called when script is run from the CLI
 def main():
     # Define command and arguments
     command = 'Rscript GeneratePDF.R {}'.format(args.input_directory)
-    # check_output will run the command and store to result
+    # run subproccess to run the command, this will call the GeneratePDF.R script with the supplied argument
     subprocess.run(command)
 
 if __name__ == '__main__':

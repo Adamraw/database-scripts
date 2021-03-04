@@ -120,7 +120,7 @@ def Repacker(rootdir,targetdir):
             #move files from source_dir to new learning goal folder
             shutil.copy(dir_file,src_dir_struct)
 
-#main function that is called when programming is run from the CLI, handles logic for which function to run
+#main function that is called when script is run from the CLI, handles logic for which function to run
 def main():
     if args.mode == "UnPackRename":
          UnPackRenamer(rootdir = args.input_directory,targetdir=args.output_directory)
