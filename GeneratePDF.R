@@ -22,14 +22,4 @@ for( name in filenames){
 
 }
 
-#print(ex)
-#try(exams2nops(filenames))
-#ex <- filenames[1:45]
-#print(ex)
-#print(length(ex))
-#try(exams2nops(ex))
-#try(exams2nops(ex,dir = '.',name = 'Exam_test', institution = "Statistics 2 Midterm2020",blank = TRUE,samepage = TRUE))
 
-
-#test <- c('CENTRAL LIMIT 1.Rmd','CENTRAL LIMIT 2.Rmd','CONFIDENCE INTERVAL 2.Rmd','CONFIDENCE INTERVAL 3.Rmd')
-#exams2nops(test)
