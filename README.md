@@ -1,5 +1,5 @@
 # database-scripts
-A collection of python scripts for unpacking, moving,renaming and checking folders and Rmds files.
+A collection of python scripts for unpacking, moving, renaming and checking folders and Rmds files.
 
 
 <b> Quick Start Guide </b>
@@ -11,7 +11,7 @@ Installation:
 
 1. Download repository and place into desired directory.
 
-2. Open favourite command line interface and move into direcoty containing the repository.
+2. Open favorite command line interface and move into directory containing the repository.
 
 3. Call scripts as shown below.
 
