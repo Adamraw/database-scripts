@@ -516,10 +516,10 @@ def CalculateHashes():
                     #   No historic match - re-calculate
                     # print("Calculating hash:"+FileDB[i][1])
 
-                    if OS[0:5] == 'Linux':
-                        Fname = FileDB[i][1].rsplit("/", 1)[1]
-                    else:
+                    if platform.system() == 'Windows':
                         Fname = FileDB[i][1].rsplit("\\", 1)[1]
+                    else:
+                        Fname = FileDB[i][1].rsplit("/", 1)[1]
 
                     Fsize = format_bytes(FileDB[i][3])
 
