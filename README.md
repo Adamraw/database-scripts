@@ -34,4 +34,4 @@ All scripts that can be called are:
 3. PDFCheck
 
 References:
-This repo contains fast-duplicate-finder by Carl Beech(https://github.com/carlbeech/fast-duplicate-finder). This is used by the DuplicateChecker script. 
+This repo contains fast-duplicate-finder by Carl Beech(https://github.com/carlbeech/fast-duplicate-finder). This is used by the DuplicateCheck script. 
