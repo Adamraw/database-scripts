@@ -29,9 +29,9 @@ python UnPackerRename.py -i C:\Users\AdamRaw\Desktop\LearningGoalFolderwithRmds 
 Call scripts with -h argument to see a list of all options.
 
 All scripts that can be called are:
-1. UnPackRenamer
-2. DuplicateChecker
-3. PDFChecker
+1. UnPackerRename
+2. DuplicateCheck
+3. PDFCheck
 
 References:
 This repo contains fast-duplicate-finder by Carl Beech(https://github.com/carlbeech/fast-duplicate-finder). This is used by the DuplicateChecker script. 
