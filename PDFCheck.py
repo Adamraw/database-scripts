@@ -1,6 +1,6 @@
 #import modules
 import argparse
-import subprocess
+import os
 
 
 #set up parser for command line interface arguments
@@ -12,8 +12,8 @@ args = parser.parse_args()
 def main():
     # Define command and arguments
     command = 'Rscript GeneratePDF.R {}'.format(args.input_directory)
-    # run subproccess to run the command, this will call the GeneratePDF.R script with the supplied argument
-    subprocess.run(command)
+    # run os.system to run the command, this will call the GeneratePDF.R script with the supplied argument
+    os.system(command)
 
 if __name__ == '__main__':
     main()
